@@ -48,13 +48,14 @@ app.get('/weather', (req, res) =>{
         })
     }
     
-    forecast(req.query.address, (error, forecastData)=>{
+    forecast(req.query.address, (error, location, pic, forecastData)=>{
         if(error){
             // return res.send('Unable to connect!')
             return res.send({error})
         }
         res.send({
-            location: req.query.address,
+            location,
+            pic,
             forecast: forecastData
         })
     })

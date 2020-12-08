@@ -6,18 +6,25 @@
 		<link rel="stylesheet" href="/css/bootstrap.css">
 	</head>
 	<body>
+		<div class="container">
 		{{>header}}
+		<h1>Shoutout to Arvind Singh Kaviya</h1>
 		<hr></hr>
 
-		<div class="container">
+		
 			<h2>Get weather updates for a location here</h2>
 			<form>
 				<input placeholder="Type Location">
 				<button>Search</button>
 			</form>
 			<br>
-			<p id="message-1"></p>
-			<p id="message-2"></p>
+			<div class="row">
+				<div class="col-md-1"><img id="pic-1"></div>
+				<div class="col-md-11">
+				<p id="message-1" ></p>
+				<p id="message-2" ></p>
+				</div>
+			</div>
 		</div>
 		<div class="container">
 			{{>footer}}
